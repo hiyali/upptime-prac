@@ -2,7 +2,7 @@ name: Issue CI
 
 on:
   issues:
-    types: [opened, reopened, closed]
+    types: [opened, reopened]
     
 jobs:
   dingtalk:
