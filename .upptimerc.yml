@@ -27,12 +27,12 @@ sites:
 #   updates: "0 3 * * *"
 #   uptime: "*/5 * * * *"
 workflowSchedule:
-  graphs: "0 * * * *"
-  responseTime: "1 * * * *"
-  staticSite: "2 * * * *"
-  summary: "3 * * * *"
-  updateTemplate: "4 * * * *"
-  updates: "5 * * * *"
+  graphs: "0 */4 * * *"
+  responseTime: "1 */4 * * *"
+  staticSite: "2 */4 * * *"
+  summary: "3 */4 * * *"
+  updateTemplate: "4 */4 * * *"
+  updates: "5 */4 * * *"
   uptime: "*/5 * * * *"
 
 status-website:
