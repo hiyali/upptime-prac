@@ -2,11 +2,11 @@ name: Issue CI
 
 on:
   issues:
-    types: [opened, closed]
+    types: [opened, reopened, closed]
     
 jobs:
   dingtalk:
-    name: Send dingtalk rmessage
+    name: Send dingtalk message
     runs-on: ubuntu-18.04
     steps:
     - name: dingtalk robot message
@@ -15,7 +15,7 @@ jobs:
         url: ${{ secrets.DINGTALK_GROUP_WEBHOOK }}
         type: markdown
         content: |
-          # MAS Portal 4 Monitor - Issue
-          ## ${{ github.event.issue.title }}
+          # Service Availability Issues
+          ## ${{ github.event.issue.type }} ${{ github.event.issue.title }}
           ${{ github.event.issue.body }}
           > from github action message
