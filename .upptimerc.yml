@@ -11,7 +11,7 @@ sites:
     headers:
       - "Authorization: Bearer $MAS_PORTAL_4_ACCESS_TOKEN"
       - "Content-Type: application/json;charset=UTF-8"
-    body: '{from_date: "2021-06-29", to_date: "2021-07-05", filter: {app_keys: [], ad_types: [], platform: []}}'
+    body: '{"from_date":"2021-06-29","to_date":"2021-07-05","filter":{"app_keys":[],"ad_types":[],"platform":[]}}'
     expectedStatusCodes:
       - 200
     maxResponseTime: 20000
