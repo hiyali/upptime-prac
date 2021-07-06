@@ -1,0 +1,17 @@
+name: Issue CI
+
+on:
+  issues:
+    types: [opened, closed]
+jobs:
+  dingtalk:
+    name: dingtalk robot message
+    uses: hiyali/dingtalk-action@master
+    with:
+      url: ${{ secrets.DINGTALK_GROUP_WEBHOOK }}
+      type: markdown
+      content: |
+        # MAS Portal 4 Monitor - Issue
+        ## ${{ github.event.issue.title }}
+        ${{ github.event.issue.body }}
+        > from github action message
