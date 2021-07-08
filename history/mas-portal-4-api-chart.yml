@@ -1,7 +1,7 @@
 url: https://mas-portal-api.yodo1.com/api/chart
-status: degraded
+status: up
 code: 200
-responseTime: 29504
-lastUpdated: 2021-07-08T03:29:59.013Z
+responseTime: 11772
+lastUpdated: 2021-07-08T03:39:11.861Z
 startTime: Tue Jul 06 2021 05:34:17 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
