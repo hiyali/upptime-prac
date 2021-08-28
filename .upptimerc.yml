@@ -4,9 +4,9 @@ repo: upptime-prac # The name of this repository
 
 sites:
   - name: MAS Portal 4
-    url: https://mas-new.yodo1.com
+    url: https://mas.yodo1.com
   - name: MAS Portal 4 - /api/chart
-    url: https://mas-portal-api.yodo1.com/api/chart
+    url: https://mas-api.yodo1.com/api/chart
     method: POST
     headers:
       - "Authorization: Bearer $MAS_PORTAL_4_ACCESS_TOKEN"
