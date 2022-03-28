@@ -26,7 +26,5 @@ jobs:
     - name: teams robot message
       uses: wei/curl@v1
       with:
-        args: -X POST ${{ secrets.MS_TEAMS_GROUP_WEBHOOK }} \
-              -H "Content-Type:application/json" \
-              -d '{"text":"# Service Availability Issues\n\n## ${{ github.event.issue.type }} ${{ github.event.issue.title }}\n\n${{ github.event.issue.body }}\n\n> from github action message\n\n"}'
+        args: -X POST ${{ secrets.MS_TEAMS_GROUP_WEBHOOK }} -H "Content-Type:application/json" -d '{"text":"# Service Availability Issues\n\n## ${{ github.event.issue.type }} ${{ github.event.issue.title }}\n\n${{ github.event.issue.body }}\n\n> from github action message\n\n"}'
         
