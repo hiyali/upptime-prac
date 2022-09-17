@@ -5,15 +5,15 @@
     "icon": "https://favicons.githubusercontent.com/mas-api.yodo1.com",
     "slug": "mas-portal-4-api-chart",
     "status": "up",
-    "uptime": "39.07%",
-    "uptimeDay": "91.43%",
+    "uptime": "39.10%",
+    "uptimeDay": "92.17%",
     "uptimeWeek": "98.78%",
     "uptimeMonth": "99.72%",
-    "uptimeYear": "47.20%",
+    "uptimeYear": "47.26%",
     "time": 1255,
-    "timeDay": 793,
-    "timeWeek": 927,
-    "timeMonth": 866,
+    "timeDay": 905,
+    "timeWeek": 843,
+    "timeMonth": 868,
     "timeYear": 1137,
     "dailyMinutesDown": {
       "2022-09-16": 123,
@@ -213,8 +213,7 @@
       "2021-09-21": 1440,
       "2021-09-20": 1440,
       "2021-09-19": 1440,
-      "2021-09-18": 1440,
-      "2021-09-17": 1440
+      "2021-09-18": 1440
     }
   }
 ]
