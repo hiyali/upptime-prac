@@ -5,27 +5,27 @@ on:
     types: [opened, reopened]
     
 jobs:
-  dingtalk:
-    name: Send dingtalk message
-    runs-on: ubuntu-18.04
-    steps:
-    - name: dingtalk robot message
-      uses: hiyali/dingtalk-action@master
-      with:
-        url: ${{ secrets.DINGTALK_GROUP_WEBHOOK }}
-        type: markdown
-        content: |
-          # Service Availability Issues
-          ## ${{ github.event.issue.type }} ${{ github.event.issue.title }}
-          ${{ github.event.issue.body }}
-          > from github action message
-#   ms_teams:
-#     name: Send teams message
-#     runs-on: ubuntu-latest
+#   dingtalk:
+#     name: Send dingtalk message
+#     runs-on: ubuntu-18.04
 #     steps:
-#     - name: teams robot message
-#       uses: wei/curl@v1
+#     - name: dingtalk robot message
+#       uses: hiyali/dingtalk-action@master
 #       with:
-#         args: -X POST "${{ secrets.MS_TEAMS_GROUP_WEBHOOK }}" -H "Content-Type:application/json" -d '{"text":"# Service Availability Issues\n\n## ${{ github.event.issue.type }} ${{ github.event.issue.title }}\n\n> from github action message\n\n"}'
-#         # ${{ github.event.issue.body }}\n\n
+#         url: ${{ secrets.DINGTALK_GROUP_WEBHOOK }}
+#         type: markdown
+#         content: |
+#           # Service Availability Issues
+#           ## ${{ github.event.issue.type }} ${{ github.event.issue.title }}
+#           ${{ github.event.issue.body }}
+#           > from github action message
+  ms_teams:
+    name: Send teams message
+    runs-on: ubuntu-latest
+    steps:
+    - name: teams robot message
+      uses: wei/curl@v1
+      with:
+        args: -X POST "${{ secrets.MS_TEAMS_GROUP_WEBHOOK }}" -H "Content-Type:application/json" -d '{"text":"# Service Availability Issues\n\n## ${{ github.event.issue.type }} ${{ github.event.issue.title }}\n\n> from github action message\n\n"}'
+        # ${{ github.event.issue.body }}\n\n
         
