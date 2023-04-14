@@ -21,7 +21,7 @@ jobs:
 #           > from github action message
   ms_teams:
     name: Send teams message
-    runs-on: alpine
+    runs-on: ubuntu-20.04
     steps:
     - name: teams robot message
       uses: wei/curl@master
