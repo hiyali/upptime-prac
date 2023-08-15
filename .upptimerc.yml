@@ -11,12 +11,25 @@ sites:
     headers:
       - "Authorization: Bearer $MAS_PORTAL_4_ACCESS_TOKEN"
       - "Content-Type: application/json;charset=UTF-8"
-    body: '{"from_date":"2021-06-29","to_date":"2021-07-05","filter":{"app_keys":[],"ad_types":[],"platform":[]}}'
+    body: '{"from_date":"2023-06-29","to_date":"2023-07-05","filter":{"app_keys":[],"ad_types":[],"platform":[]}}'
     expectedStatusCodes:
       - 200
     maxResponseTime: 30000
     assignees:
-      - hiyali
+      - salam@yodo1.com
+      
+  - name: Warehouse API - /api/report/reports
+    url: https://warehouse-api.yodo1.net/api/report/reports
+    method: POST
+    headers:
+      - "x-api-key: $WAREHOUSE_KONG_API_KEY"
+      - "Content-Type: application/json;charset=UTF-8"
+    body: '{"from_date":"2023-06-29","to_date":"2023-07-05","filter":{"app_keys":["18xpBxZsPW"],"platform":["android"]},"view_by":"application"}'
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 30000
+    assignees:
+      - salam@yodo1.com
 
 # workflowSchedule:
 #   graphs: "0 0 * * *"
