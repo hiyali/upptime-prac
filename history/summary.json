@@ -6,13 +6,13 @@
     "slug": "mas-portal-4-api-chart",
     "status": "up",
     "uptime": "60.59%",
-    "uptimeDay": "98.67%",
+    "uptimeDay": "100.00%",
     "uptimeWeek": "99.81%",
     "uptimeMonth": "99.96%",
     "uptimeYear": "87.65%",
     "time": 926,
-    "timeDay": 977,
-    "timeWeek": 935,
+    "timeDay": 968,
+    "timeWeek": 928,
     "timeMonth": 975,
     "timeYear": 932,
     "dailyMinutesDown": {
@@ -78,11 +78,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.89%",
     "uptimeYear": "99.89%",
-    "time": 836,
+    "time": 835,
     "timeDay": 809,
     "timeWeek": 827,
-    "timeMonth": 836,
-    "timeYear": 836,
+    "timeMonth": 835,
+    "timeYear": 835,
     "dailyMinutesDown": {
       "2023-08-15": 32
     }
