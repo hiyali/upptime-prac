@@ -1,7 +1,7 @@
 url: https://mas-api.yodo1.com/api/chart
-status: up
-code: 200
-responseTime: 1210
-lastUpdated: 2024-05-27T21:06:27.666Z
+status: down
+code: 503
+responseTime: 762
+lastUpdated: 2024-05-27T21:16:18.126Z
 startTime: 2021-07-06T05:34:17.000Z
 generator: Upptime <https://github.com/upptime/upptime>
