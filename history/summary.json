@@ -5,7 +5,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/mas-api.yodo1.com.ico",
     "slug": "mas-portal-4-api-chart",
     "status": "up",
-    "uptime": "75.12%",
+    "uptime": "75.13%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
@@ -13,7 +13,7 @@
     "time": 1018,
     "timeDay": 952,
     "timeWeek": 1057,
-    "timeMonth": 1051,
+    "timeMonth": 1052,
     "timeYear": 1017,
     "dailyMinutesDown": {
       "2024-09-05": 159
