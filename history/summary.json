@@ -5,16 +5,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/mas-api.yodo1.com.ico",
     "slug": "mas-portal-4-api-chart",
     "status": "up",
-    "uptime": "77.32%",
+    "uptime": "77.33%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
-    "time": 1012,
-    "timeDay": 1272,
-    "timeWeek": 1091,
-    "timeMonth": 1020,
-    "timeYear": 1010,
+    "time": 1013,
+    "timeDay": 1259,
+    "timeWeek": 1085,
+    "timeMonth": 1019,
+    "timeYear": 1009,
     "dailyMinutesDown": {
       "2024-09-05": 159
     }
@@ -31,9 +31,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 869,
-    "timeDay": 895,
-    "timeWeek": 938,
-    "timeMonth": 926,
+    "timeDay": 905,
+    "timeWeek": 940,
+    "timeMonth": 927,
     "timeYear": 871,
     "dailyMinutesDown": {}
   }
