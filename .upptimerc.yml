@@ -2,66 +2,66 @@
 owner: hiyali # Your GitHub organization or username, where this repository lives
 repo: upptime-prac # The name of this repository
 
-sites:
-  # - name: MAS Portal 4
-  #   url: https://mas.yodo1.com
-  - name: MAS Portal 4 - /api/chart
-    url: https://mas-api.yodo1.com/api/chart
-    method: POST
-    headers:
-      - "Authorization: Bearer $MAS_PORTAL_4_ACCESS_TOKEN"
-      - "Content-Type: application/json;charset=UTF-8"
-    body: '{"from_date":"2023-06-29","to_date":"2023-07-05","filter":{"app_keys":[],"ad_types":[],"platform":[]}}'
-    expectedStatusCodes:
-      - 200
-    maxResponseTime: 30000
-    assignees:
-      - salam@yodo1.com
+# sites:
+#   # - name: MAS Portal 4
+#   #   url: https://mas.yodo1.com
+#   - name: MAS Portal 4 - /api/chart
+#     url: https://mas-api.yodo1.com/api/chart
+#     method: POST
+#     headers:
+#       - "Authorization: Bearer $MAS_PORTAL_4_ACCESS_TOKEN"
+#       - "Content-Type: application/json;charset=UTF-8"
+#     body: '{"from_date":"2023-06-29","to_date":"2023-07-05","filter":{"app_keys":[],"ad_types":[],"platform":[]}}'
+#     expectedStatusCodes:
+#       - 200
+#     maxResponseTime: 30000
+#     assignees:
+#       - salam@yodo1.com
       
-  - name: Warehouse API - /api/report/reports
-    url: https://warehouse-api.yodo1.net/api/report/reports
-    method: POST
-    headers:
-      - "x-api-key: $WAREHOUSE_KONG_API_KEY"
-      - "Content-Type: application/json;charset=UTF-8"
-    body: '{"from_date":"2023-06-29","to_date":"2023-07-05","filter":{"app_keys":["18xpBxZsPW"],"platform":["android"]},"view_by":"application"}'
-    expectedStatusCodes:
-      - 200
-    maxResponseTime: 30000
-    assignees:
-      - salam@yodo1.com
+#   - name: Warehouse API - /api/report/reports
+#     url: https://warehouse-api.yodo1.net/api/report/reports
+#     method: POST
+#     headers:
+#       - "x-api-key: $WAREHOUSE_KONG_API_KEY"
+#       - "Content-Type: application/json;charset=UTF-8"
+#     body: '{"from_date":"2023-06-29","to_date":"2023-07-05","filter":{"app_keys":["18xpBxZsPW"],"platform":["android"]},"view_by":"application"}'
+#     expectedStatusCodes:
+#       - 200
+#     maxResponseTime: 30000
+#     assignees:
+#       - salam@yodo1.com
 
+# # workflowSchedule:
+# #   graphs: "0 0 * * *"
+# #   responseTime: "0 23 * * *"
+# #   staticSite: "0 1 * * *"
+# #   summary: "0 0 * * *"
+# #   updateTemplate: "0 0 * * *"
+# #   updates: "0 3 * * *"
+# #   uptime: "*/5 * * * *"
 # workflowSchedule:
-#   graphs: "0 0 * * *"
-#   responseTime: "0 23 * * *"
-#   staticSite: "0 1 * * *"
-#   summary: "0 0 * * *"
-#   updateTemplate: "0 0 * * *"
-#   updates: "0 3 * * *"
+#   graphs: "0 */3 * * *"
+#   responseTime: "1 */3 * * *"
+#   staticSite: "2 */3 * * *"
+#   summary: "3 */3 * * *"
+#   updateTemplate: "4 */3 * * *"
+#   updates: "5 */3 * * *"
 #   uptime: "*/5 * * * *"
-workflowSchedule:
-  graphs: "0 */3 * * *"
-  responseTime: "1 */3 * * *"
-  staticSite: "2 */3 * * *"
-  summary: "3 */3 * * *"
-  updateTemplate: "4 */3 * * *"
-  updates: "5 */3 * * *"
-  uptime: "*/5 * * * *"
 
-status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
-  baseUrl: /upptime-prac
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+# status-website:
+#   # Add your custom domain name, or remove the `cname` line if you don't have a domain
+#   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+#   # cname: demo.upptime.js.org
+#   baseUrl: /upptime-prac
+#   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+#   name: Upptime
+#   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
+#   introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+#   navbar:
+#     - title: Status
+#       href: /
+#     - title: GitHub
+#       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
+# # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
